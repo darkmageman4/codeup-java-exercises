@@ -15,7 +15,7 @@ import java.util.Scanner;
 //            i *= i;
 //        } while (i <= 65536);
         //for loop
-//        for (int i = 2; i < 300; i *= i){
+//        for (long i = 2; i < 10000; i *= i){
 //            System.out.println(i);
 //            if (i == 5){
 //                break;
