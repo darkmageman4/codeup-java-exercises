@@ -6,7 +6,8 @@ public class MethodsExercises {
 //        sub();
 //        mul();
 //        div();
-        wePlaying("Rockets");
+//        wePlaying("Rockets");
+        myStats("Life is like a box of rocks");
 
     }
 
@@ -66,8 +67,24 @@ public class MethodsExercises {
     public static void numbers(String play){
         System.out.println("\nThere are " + play.length() + " characters in this string");
     };
-//    public int getInteger(int min, int max);{
-//        System.out.print("Enter a number between 1 and 10: ");
-//        int userInput = getInteger(1, 10);
-//    }
+//    TODO: invoke a method that accepts (and returns) the following:
+//        - accepts: your first name and your last name. returns: A
+//        string that reads: "Hello Laura Ruiz-Roehrs (replace with your
+//        first and last)";  - accepts: your age. returns: "that's crazy! you don't look
+//        100 years old!"    -accepts: your favorite quote. returns: "your fave quote"
+
+    public static String myStats(String x, String y){
+        System.out.printf("Hello %s %s",x,y);
+        return "Hello"+ x + y;
+    }
+    public static String myStats(int x){
+        System.out.printf("That's crazy! you don't look 100 years old!");
+        return "That's crazy! you don't look 100 years old!";
+    }
+    public static String myStats(String x){
+        System.out.printf(x);
+        return (x);
+    }
+
+
 }
