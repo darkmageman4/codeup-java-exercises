@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class MethodsExercises {
     public static void main(String[] args) {
@@ -13,6 +14,9 @@ public class MethodsExercises {
 //        int km = sc.nextInt();
 //        stonks(km);
 //        System.out.println("Good Job!");
+//        boozo(1, 10);
+//        Scanner scammer = new Scanner(System.in);
+//        number4(scammer);
 
     }
 
@@ -133,7 +137,7 @@ public class MethodsExercises {
 //     how many miles they have left in training until they have 0 miles
 //     left.
 
-    public static void stonks(int miles) {
+    public static void stonks (int miles) {
         if (miles > 0) {
             System.out.printf("How many miles %s\n", miles);
             miles -= 2;
@@ -142,8 +146,42 @@ public class MethodsExercises {
         }
     }
 
-    public static void number3(){
+    public static int boozo (int min, int max) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number between " + min + " and " + max + " :");
+        int response = sc.nextInt();
+        if (response >= min && response <= max) {
+            System.out.println("num in range");
+            return response;
+        } else {
+            return boozo(min, max);
+
+        }
+    }
+    public static int number3(int x) {
         System.out.println("Enter a number 1 - 10");
+        int i, value = 1;
+        for (i = 1; i <= x; i++) {
+            value = value * i;
+        }
+        return value;
 
     }
+
+   public static void number4 (Scanner scammer){
+//        Scanner scammer = new Scanner;
+       while (true){
+           System.out.println("How many side is your dice?");
+           short n = Short.parseShort(scammer.nextLine());
+           int range = -1 + 1;
+           System.out.println("Your dice roll 1 = " + ((int)(Math.random() * range) + 1));
+           System.out.println("Your dice roll 2 = " + ((int)(Math.random() * range) + 1));
+           System.out.println("Do you wish to continue?");
+           if(scammer.nextLine().toLowerCase().equals("n")){
+               break;
+           }
+       }
+   }
+
 }
+
