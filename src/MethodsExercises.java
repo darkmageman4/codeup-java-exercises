@@ -17,6 +17,7 @@ public class MethodsExercises {
 //        boozo(1, 10);
 //        Scanner scammer = new Scanner(System.in);
 //        number4(scammer);
+        number3(10);
 
     }
 
@@ -149,10 +150,10 @@ public class MethodsExercises {
     public static int boozo (int min, int max) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number between " + min + " and " + max + " :");
-        int response = sc.nextInt();
-        if (response >= min && response <= max) {
+        int answer = sc.nextInt();
+        if (answer >= min || answer <= max) {
             System.out.println("num in range");
-            return response;
+            return answer;
         } else {
             return boozo(min, max);
 
@@ -164,6 +165,7 @@ public class MethodsExercises {
         for (i = 1; i <= x; i++) {
             value = value * i;
         }
+        System.out.println( x + "!" + " = " + value);
         return value;
 
     }
