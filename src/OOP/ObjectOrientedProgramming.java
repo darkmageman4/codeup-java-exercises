@@ -7,8 +7,11 @@ public class ObjectOrientedProgramming {
     Person person = new Person();
 
     person.setName("Wagner");
-        System.out.println(person.getName());
+        System.out.println(person.getEntertainment("ride rollercosters"));
 
+        Person Tiffany = new Person();
+        Tiffany.setName("Tiffany");
+        System.out.println(Tiffany.getEntertainment("tubing the river"));
 
     }
 }
