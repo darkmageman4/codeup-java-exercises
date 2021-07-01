@@ -1,4 +1,4 @@
-package Oberon;
+package oberon;
 
 public class Oberon {
 // TODO: CREATE A NEW "OBERON" CLASS WITH AT LEAST 6 PROPERTIES

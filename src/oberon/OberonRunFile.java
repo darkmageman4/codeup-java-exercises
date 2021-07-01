@@ -1,4 +1,4 @@
-package Oberon;
+package oberon;
 
 public class OberonRunFile {
 

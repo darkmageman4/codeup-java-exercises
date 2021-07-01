@@ -1,4 +1,4 @@
-package OOPExercise;
+package oopexercise;
 
 public class Person {
     //field

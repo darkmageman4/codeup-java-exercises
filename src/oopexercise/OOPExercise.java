@@ -1,4 +1,4 @@
-package OOPExercise;
+package oopexercise;
 
 public class OOPExercise {
     public static void main(String[] args) {
