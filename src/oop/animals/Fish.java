@@ -18,7 +18,6 @@ super(canSwim, length, finCount, isSaltWater, name);
     public Fish (){}
 
     //getAndSetters
-
     public boolean getHasScales() {
         return hasScales;
     }
@@ -26,4 +25,9 @@ super(canSwim, length, finCount, isSaltWater, name);
     public void setHasScales(boolean hasScales) {
         this.hasScales = hasScales;
     }
+
+    public String getName(){
+        return super.getName().toUpperCase();
+    }
+
 }
