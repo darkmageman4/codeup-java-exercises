@@ -2,33 +2,47 @@ package shapes;
 
 import oop.animals.Marines;
 
-public class Rectangle {
-    //Protected properties
-    protected int length;
-    protected int width;
-
-    // constructor that accepts two number
+//Ractangle extend to Quadrilateral implement Measurable
+public class Rectangle extends Quadrilateral implements Measurable {
     public Rectangle(int length, int width) {
-        this.length = length;
-        this.width = width;
+        super(length, width);
     }
 
-    //methods
-    public int getlength() {
-        return length;
+    @Override
+    public double getPerimeter() {
+        return 0;
     }
 
-    public int getWidth() {
-        return width;
+    @Override
+    public double getArea() {
+        return 0;
     }
-
-    public int getArea() {
-        return this.length * this.width;
-    }
-
-    public int getPerimeter() {
-        return 2 * (this.length + this.width);
-    }
+//    //Protected properties
+//    protected int length;
+//    protected int width;
+//
+//    // constructor that accepts two number
+//    public Rectangle(int length, int width) {
+//        this.length = length;
+//        this.width = width;
+//    }
+//
+//    //methods
+//    public int getlength() {
+//        return length;
+//    }
+//
+//    public int getWidth() {
+//        return width;
+//    }
+//
+//    public int getArea() {
+//        return this.length * this.width;
+//    }
+//
+//    public int getPerimeter() {
+//        return 2 * (this.length + this.width);
+//    }
 
 
 }
