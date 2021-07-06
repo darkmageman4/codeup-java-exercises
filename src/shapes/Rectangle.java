@@ -1,9 +1,7 @@
 package shapes;
 
-import oop.animals.Marines;
-
 //Ractangle extend to Quadrilateral implement Measurable
-public class Rectangle extends Quadrilateral implements Measurable {
+public class Rectangle extends Quadrilateral implements Shape {
     public Rectangle(int length, int width) {
         super(length, width);
     }
