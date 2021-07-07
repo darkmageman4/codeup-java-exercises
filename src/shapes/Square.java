@@ -6,11 +6,11 @@ public class Square extends Quadrilateral{
     }
 
     @Override
-    public double getPerimeter() { return 0; }
+    public double getPerimeter() { return 2 * (super.getLength() * super.getWidth()); }
 
     @Override
     public double getArea() {
-        return 0;
+        return (super.getLength() * super.getWidth());
     }
 
 //(copying) Extending Class to Rectangle
