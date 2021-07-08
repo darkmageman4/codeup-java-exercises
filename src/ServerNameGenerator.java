@@ -9,21 +9,19 @@ public class ServerNameGenerator {
         String[] adjective = {"adorable", "adventurous", "aggressive", "agreeable"
                     , "alert", "alive"
                     , "amused", "angry-15", "annoying", "amazing"};
-        int randomized = (int) (Math.random() * adjective.length);
-        String ads = adjective[randomized];
-//        System.out.println("Random Element = " + ads);
+        int goodAdjectives = (int) (Math.random() * adjective.length);
+        String evenBetter = adjective[goodAdjectives];
 
 //adjective
 
 //nouns
         String[] nouns = {"Bread", "Milk", "Juice", "Eggs", "Cheese", "Rice"
                 , "Grenades", "Ar-15", "Scar", "Sig"};
-        int randomIndex = (int) (Math.random() * nouns.length);
-        String randomElement = nouns[randomIndex];
-//        System.out.println("Random Element = " + randomElement);
+        int goodNouns = (int) (Math.random() * nouns.length);
+        String oddWorse = nouns[goodNouns];
 
 //nouns
-        System.out.printf("Here is your server name: \n%s-%s",  randomElement,ads);
+        System.out.printf("Here is your server name: \n%s-%s",  oddWorse,evenBetter);
 
     }
 }
