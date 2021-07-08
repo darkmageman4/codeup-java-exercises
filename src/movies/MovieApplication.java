@@ -35,8 +35,7 @@ public class MovieApplication {
                 break;
 
             default:
-                System.out.println("That's not an operator");
-                throw new IllegalStateException("Unexpected value: " + operator);
+                throw new IllegalStateException("Unexpected value: " + choice);
         }
     }
 }
