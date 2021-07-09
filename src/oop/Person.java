@@ -1,7 +1,9 @@
 package oop;
 
 public class Person {
-
+    /**
+     * this is a method summary
+     */
     // field
     private String name;
     private int age;
@@ -11,7 +13,9 @@ public class Person {
     private static final boolean hasSkin = true;
 
     // Constructor
-    public Person (String name, int age, String height, String purpose,String nationality){
+//    public Person (String name, int age, String height, String purpose,String nationality){
+
+    public Person (String name){
         this.name = name;
         this.age = age;
         this.height = height;

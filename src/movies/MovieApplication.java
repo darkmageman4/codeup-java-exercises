@@ -19,19 +19,19 @@ public class MovieApplication {
         int choice = userInput.nextInt();
         switch (choice) {
             case 1:
-                resolution = number + other;
+//                resolution = number + other;
                 break;
             case 2:
-                resolution = number - other;
+//                resolution = number - other;
                 break;
             case 3:
-                resolution = number * other;
+//                resolution = number * other;
                 break;
             case 4:
-                resolution = number / other;
+//                resolution = number / other;
                 break;
             case 5:
-                resolution = number / other;
+//                resolution = number / other;
                 break;
 
             default:
