@@ -16,7 +16,6 @@ public class GradesApplication {
 //        System.out.println(test.getGrades());
 //        System.out.println(test.getGradeAverage());
 
-
     }
 
     public static void application() {
@@ -69,13 +68,15 @@ public class GradesApplication {
                 restart();
             default:
                 System.out.printf("Sorry, no student found with the GitHub username of %s.", other);
-                throw new IllegalStateException("Unexpected value: " + other);
+//                throw new IllegalStateException("Unexpected value: " + other);
         }
     }
-public static boolean cancel (){
+
+    public static boolean cancel() {
         System.out.println("Then get out of here");
-    return false;
-}
+        return false;
+    }
+
     public static void restart() {
         Scanner tower = new Scanner(System.in);
         System.out.println("Would you like to see another student?\n");
@@ -86,6 +87,6 @@ public static boolean cancel (){
             cancel();
         }
 
-        }
     }
+}
 
