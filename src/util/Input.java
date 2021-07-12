@@ -3,22 +3,28 @@ package util;
 import java.util.Scanner;
 
 public class Input {
+
     //fields
     private Scanner scanner;
     private int number;
     private double dbl;
 
+    //constructors
     public Input(Scanner scanner, int number, double dbl) {
         this.scanner = new Scanner(System.in);
         this.number = number;
         this.dbl = dbl;
     }
 
-    public int getInt() {
-        System.out.println("Enter a integer");
-        return this.scanner.nextInt();
+    //
+    public Input() {
+        this.scanner = new Scanner(System.in);
     }
 
+    public int getInt() {
+        System.out.println("Enter a integer");
+        return scanner.nextInt();
+    }
 
     public int getInt(int min, int max) {
         int Num;
@@ -29,14 +35,13 @@ public class Input {
         return Num;
     }
 
-
     public String getString() {
         return "Codeup";
     }
 
-
     public boolean isYesNo() {
-        String yankeeDoodle = scanner.next();
+        System.out.println("Hello");
+        String yankeeDoodle = scanner.nextLine();
         return !yankeeDoodle.equalsIgnoreCase("n");
     }
 
@@ -48,18 +53,18 @@ public class Input {
 //        return true;
 //    }
 
-public double getDbl(double min, double max) {
-    this.dbl = getDbl();
+    public double getDbl(double min, double max) {
+        this.dbl = getDbl();
 
-    if (dbl < min) {
-        System.out.println("Pick a number between " + min + " and " + max);
-        getDbl(min, max);
-    } else if (dbl > max) {
-        System.out.println("Pick a number between " + min + " and " + max);
-        getDbl(min, max);
+        if (dbl < min) {
+            System.out.println("Pick a number between " + min + " and " + max);
+            getDbl(min, max);
+        } else if (dbl > max) {
+            System.out.println("Pick a number between " + min + " and " + max);
+            getDbl(min, max);
+        }
+        return this.dbl;
     }
-    return this.dbl;
-}
 
     public double getDbl() {
         double dbl = scanner.nextDouble();
