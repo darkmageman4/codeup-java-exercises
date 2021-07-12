@@ -33,15 +33,21 @@ public class Student {
         grades.add((double) grade);
     }
 
-    public double Students() {
-        var student = getNames().indexOf(names);
-        var classSize = getGrades().size();
-        return student;
-
+    public void addGrades(int ...grades){
+        //iterate through grades
+        for (int grade: grades) {
+            this.addGrade(grade);
+        }
     }
+
 
     // returns the average of the students grades
     public double getGradeAverage() {
-        return Students();
+        double sum = 0;
+        for (double grade : this.grades){
+            sum += grade;
+        }
+        return sum / grades.size();
     }
 }
+
