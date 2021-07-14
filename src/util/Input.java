@@ -45,14 +45,6 @@ public class Input {
         return !yankeeDoodle.equalsIgnoreCase("n");
     }
 
-//    public boolean isYesNo() {
-//        String yankeeDoodle = scanner.next();
-//        if (yankeeDoodle.equalsIgnoreCase("n")){
-//            return false;
-//        }
-//        return true;
-//    }
-
     public double getDbl(double min, double max) {
         this.dbl = getDbl();
 

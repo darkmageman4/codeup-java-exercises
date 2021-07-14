@@ -1,15 +1,19 @@
 package Randomexercises;
 
 import static Randomexercises.Vacation.newSpot;
+import static Randomexercises.Scratchpaper.stringToArray;
+
 
 ///returner line 22 in front of locations
 public class Main {
     public static void main(String[] args) {
-        newSpot();
+//        newSpot();
+//        stringToArray("Hey, I just met you\n" +
+//                "And this is crazy\n" +
+//                "But here's my number\n" +
+//                "So call me, maybe?");
 
-
-
-//        String[] userLocations = {};
+    //        String[] userLocations = {};
 //        System.out.println("Please input your favorite vacation spot");
 //        System.out.println("Press q anytime to exit");
 //        System.out.println(Arrays.toString(locations(userInput(),userLocations)));
@@ -26,5 +30,6 @@ public class Main {
 //            }
 //            return results;
 //        }
-}
+
+    }
 }
