@@ -1,7 +1,6 @@
 package Randomexercises;
 
-import static Randomexercises.Vacation.newSpot;
-import static Randomexercises.Scratchpaper.stringToArray;
+import static Randomexercises.Scratchpaper.letterInString;
 
 
 ///returner line 22 in front of locations
@@ -12,7 +11,7 @@ public class Main {
 //                "And this is crazy\n" +
 //                "But here's my number\n" +
 //                "So call me, maybe?");
-
+        letterInString();
     //        String[] userLocations = {};
 //        System.out.println("Please input your favorite vacation spot");
 //        System.out.println("Press q anytime to exit");

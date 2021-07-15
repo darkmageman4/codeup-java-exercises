@@ -36,7 +36,9 @@ public class Input {
     }
 
     public String getString() {
-        return "Codeup";
+        String plane = "jane";
+        System.out.println(plane);
+        return plane;
     }
 
     public boolean isYesNo() {
