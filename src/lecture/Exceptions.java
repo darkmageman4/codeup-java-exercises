@@ -44,7 +44,7 @@ public customException (String msg){
     super(msg);
 }
 
-        class MyException extends Exception {
+        static class MyException extends Exception {
             String message;
 
             public MyException(String str) {

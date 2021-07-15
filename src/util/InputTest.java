@@ -2,9 +2,11 @@ package util;
 
 public class InputTest {
     public static void main(String[] args) {
-//        Input input = new Input();
-//        System.out.println(input.isYesNo());
+        Input lifeStyle = new Input();
+        System.out.println(lifeStyle.getInt());
 
+        Input lavaWorld = new Input();
+        System.out.println(lavaWorld.getDbl());
 
     }
 
