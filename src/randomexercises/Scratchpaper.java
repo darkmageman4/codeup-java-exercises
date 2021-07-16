@@ -1,8 +1,7 @@
-package Randomexercises;
+package randomexercises;
 
 import java.util.Arrays;
 import java.util.Random;
-import java.util.regex.Pattern;
 
 public class Scratchpaper {
     //TODO: write a method that accepts a string and returns a String array that splits at the spaces
@@ -13,6 +12,22 @@ public class Scratchpaper {
         String[] lyrics = input.split(" ");
         System.out.println(Arrays.toString(lyrics));
     }
+
+    public static void getTwentyPrimes() {
+        //returns a string containing the first 20 prime numbers, each separated by a comma.
+        // Output: "1, 2, 3, 5, 7, 11, 13, 17, 19"... until we have a total count of 20 primes in the string.
+
+
+        for (int i = 0; i <= 20; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i + " is not a prime number");
+            } else {
+                System.out.println(i + " is a prime number");
+
+            }
+        }
+    }
+
 
     public static void letterInString() {
 // TODO Given this string: `String str = "Oberon is the
@@ -28,7 +43,7 @@ public class Scratchpaper {
         System.out.println(randomNum);
 
         try {
-            System.out.println("letter "  + " =  " + str.toUpperCase().charAt(randomNum));
+            System.out.println("letter " + " =  " + str.toUpperCase().charAt(randomNum));
         } catch (StringIndexOutOfBoundsException e) {
             System.out.println("You went over!");
         }

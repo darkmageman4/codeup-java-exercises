@@ -1,6 +1,6 @@
-package Company;
+package company;
 
-public class Manager extends Company.Employee {
+public class Manager extends company.Employee {
         public static void main(String[] args) {
                 Manager monger = new Manager();
                 System.out.println(monger.doWork());

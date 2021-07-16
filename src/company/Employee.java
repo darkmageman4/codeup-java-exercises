@@ -1,4 +1,4 @@
-package Company;
+package company;
 
 // abstract keyword
 // no longer can instantiate Employee.
