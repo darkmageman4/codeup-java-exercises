@@ -61,11 +61,11 @@ public class ArraysExercises {
         return intArray;
     }
 
-    public static String[] getNameArray() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Whats is your name!");
-        return scanner.nextLine().split(" ");
-    }
+//    public static String[] getNameArray() {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Whats is your name!");
+//        return scanner.nextLine().split(" ");
+//    }
 }
 
 
